@@ -1,0 +1,28 @@
+.video-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .scripting-section {
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .accordion {
+    margin-top: 20px;
+  }
+  
+  .collapsible-header {
+    cursor: pointer;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .collapsible-body {
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
