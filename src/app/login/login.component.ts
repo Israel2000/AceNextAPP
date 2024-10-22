@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  image001 = 'public/relaxed-login.jpg';
 
 }
