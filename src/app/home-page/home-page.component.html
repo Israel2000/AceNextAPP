@@ -1,34 +1,46 @@
 <!-- Navigation Bar -->
 <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Prexam</a>
-      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/features">Features</a></li>
-        <li><a routerLink="/about">About Us</a></li>
-        <li><a routerLink="/signup">Sign Up</a></li>
-      </ul>
-    </div>
-  </nav>
-  
-  <!-- Mobile Menu (Sidenav) -->
-  <ul class="sidenav" id="mobile-nav">
-    <li><a routerLink="/home">Home</a></li>
-    <li><a routerLink="/features">Features</a></li>
-    <li><a routerLink="/about">About Us</a></li>
-    <li><a routerLink="/signup">Sign Up</a></li>
-  </ul>
-  
-  
-  <div class="container">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Prexam</a>
+    <a href="#" data-target="mobile-nav" class="sidenav-trigger"
+      ><i class="material-icons">menu</i></a
+    >
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#">List of Courses</a></li>
+      <li><a href="#">Free Interview Prep</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <!-- My Account Link -->
+      <li>
+        <a href="/my-account"> <i class="fas fa-user"></i> My Account </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Mobile Menu (Sidenav) -->
+<ul class="sidenav" id="mobile-nav">
+  <li><a href="#">List of Courses</a></li>
+  <li><a href="#">Free Interview Prep</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Sign Up</a></li>
+  <!-- My Account Link -->
+  <li>
+    <a href="/my-account"> <i class="fas fa-user"></i> My Account </a>
+  </li>
+</ul>
+
+<!-- Content Container (Main + Payment Sections) -->
+<div class="container content-container">
+  <!-- Main Content -->
+  <div class="main-content">
     <!-- Section 1: Welcome Message -->
     <section class="section center-align">
-      <h1>Welcome to Prexam</h1>
+      <h1 style="color:#26a69a">Welcome to Prexam</h1>
       <p>Sign up to start preparing for your exams today!</p>
-      <a routerLink="/signup" class="btn-large waves-effect waves-light">Sign Up</a>
+      <a href="#" class="btn-large waves-effect waves-light">Sign Up</a>
     </section>
-  
+
     <!-- Section 2: Features -->
     <section class="section">
       <div class="row">
@@ -58,12 +70,142 @@
         </div>
       </div>
     </section>
-  
+
+  </div>
+
+  <!-- Payment Section -->
+  <div class="payment-section">
+    <h5 style="color:#26a69a">Payment Options</h5>
+    <div class="card payment-card">
+      <div class="card-content">
+        <span class="card-title">3 Days Access</span>
+        <p>$5.00</p>
+        <a class="btn waves-effect waves-light" href="#">Choose</a>
+      </div>
+    </div>
+    <div class="card payment-card">
+      <div class="card-content">
+        <span class="card-title">7 Days Access</span>
+        <p>$10.00</p>
+        <a class="btn waves-effect waves-light" href="#">Choose</a>
+      </div>
+    </div>
+    <div class="card payment-card">
+      <div class="card-content">
+        <span class="card-title">1 Month Access</span>
+        <p>$30.00</p>
+        <a class="btn waves-effect waves-light" href="#">Choose</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container bordered-container mt-2">
+  <!-- About Us Section -->
+  <section class="section">
+    <div class="row">
+      <!-- Left Column: Image -->
+      <div class="col s12 m6">
+        <img src="public/assets/aboutus.jpg" alt="About Us Image" class="responsive-img" />
+      </div>
+      <!-- Right Column: Paragraph -->
+      <div class="col s12 m6">
+        <h4 style="color:#26a69a">About Us</h4>
+        <p>
+          At Prexam, we understand the pivotal role preparation plays in achieving success on critical exams. Whether it’s a career-advancing certification or a college entry test, taking the step to prepare thoroughly can give you the confidence to excel. We’re dedicated to providing resources that empower you to take the right steps towards your future.
+        </p>
+      </div>
+    </div>
+  </section>
+
     <!-- Section 3: Benefits -->
     <section class="section center-align">
-      <h4>Why Choose Prexam?</h4>
-      <p>Join our community of learners and benefit from personalized learning plans, expert guidance, and much more.</p>
-      <a routerLink="/signup" class="btn waves-effect waves-light">Get Started</a>
+      <h4 style="color:#26a69a">Why Choose Prexam?</h4>
+      <p>
+        Join our community of learners and benefit from personalized learning
+        plans, expert guidance, and much more.
+      </p>
+      <a href="#" class="btn waves-effect waves-light">Get Started</a>
     </section>
+</div>
+
+
+<!-- assesment section -->
+<section class="section">
+  <div class="container">
+    <h4 class="center-align" style="color:#26a69a">Which Assessment Are You Taking?</h4>
+    <div class="row center-content">
+      <!-- Column 1 -->
+      <div class="col s12 m4">
+        <a href="#" class="assessment-link">
+          <i class="material-icons left">arrow_forward</i> SAT Exam
+        </a>
+        <a href="#" class="assessment-link">
+          <i class="material-icons left">arrow_forward</i> ACT Exam
+        </a>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col s12 m4">
+        <a href="#" class="assessment-link">
+          <i class="material-icons left">arrow_forward</i> GRE Exam
+        </a>
+        <a href="#" class="assessment-link">
+          <i class="material-icons left">arrow_forward</i> TOEFL Exam
+        </a>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col s12 m4">
+        <a href="#" class="assessment-link">
+          <i class="material-icons left">arrow_forward</i> IELTS Exam
+        </a>
+        <a href="#" class="assessment-link">
+          <i class="material-icons left">arrow_forward</i> GMAT Exam
+        </a>
+      </div>
+    </div>
   </div>
-  
+</section>
+
+
+
+
+<footer class="page-footer" style="background-color: #26a69a">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Content -->
+      <div class="col s12 m6">
+        <h5 class="white-text">PrepExam</h5>
+        <p class="grey-text text-lighten-4">
+          Helping you prepare for exams with comprehensive course material and
+          practice tests.
+        </p>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="col s12 m6">
+        <h5 class="white-text">Quick Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" routerLink="/">Home</a></li>
+          <li>
+            <a class="grey-text text-lighten-3" routerLink="/about">About</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" routerLink="/contact"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-copyright">
+    <div class="container">
+      © 2024 PrepExam, All rights reserved.
+      <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+    </div>
+  </div>
+</footer>

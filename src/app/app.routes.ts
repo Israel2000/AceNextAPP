@@ -7,18 +7,12 @@ import { SignupComponent } from './signup/signup.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 export const routes: Routes = [
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'student-dashboard', component: StudentDashboardComponent },
   { path: 'course-page', component: CoursePageComponent },
   { path: 'signup', component: SignupComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirect to login by default
-  { path: '**', redirectTo: '/login' } // Wildcard route to handle unknown paths
+  { path: '', redirectTo: '/', pathMatch: 'full' }, // Redirect to login by default
+  { path: '**', redirectTo: '/' } // Wildcard route to handle unknown paths
 
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

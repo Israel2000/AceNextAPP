@@ -1,12 +1,128 @@
 nav {
-    background-color: #ff4081;
+  background-color: #ff4081;
+}
+
+.brand-logo {
+  font-weight: bold;
+}
+
+.sidenav {
+  background-color: #f9f9f9;
+}
+
+/* Set the container to 100% width */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Main content section */
+.main-content {
+  flex: 70%;
+  padding-right: 20px;
+}
+
+span {
+  color: #26a69a;
+}
+
+/* Payment section */
+.payment-section {
+  flex: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  /* border-left: 5px solid #26a69a; */
+}
+
+.payment-card {
+  margin-bottom: 20px;
+}
+
+.payment-section h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.payment-section .card-title {
+  font-weight: bold;
+}
+
+.payment-section .btn {
+  width: 100%;
+  background-color: #26a69a;
+}
+/* //assesment */
+/* Flex styling for centered content */
+.center-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between columns */
+}
+
+.center-content .col {
+  max-width: 250px; /* Keeps columns compact */
+}
+
+.bordered-container {
+  border: 2px solid #26a69a; /* Adds a 6px border with your specified color */
+  padding: 15px; /* Optional: adds padding inside the border */
+  margin-top: 10px;
+}
+
+.assessment-link {
+  color: black!important;
+}
+
+
+/* Styling for assessment links */
+.assessment-link {
+  display: block;
+  font-size: 18px;
+  color: #26a69a;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.assessment-link:hover {
+  color: #00796b;
+}
+
+
+
+
+/* Two-column layout */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .content-container {
+    flex-direction: column;
   }
-  
-  .brand-logo {
-    font-weight: bold;
+
+  .main-content,
+  .payment-section {
+    flex: 100%;
   }
-  
-  .sidenav {
-    background-color: #f9f9f9;
+
+  .payment-section {
+    margin-top: 20px;
+    border-left: none;
   }
-  
+}
+
+/* Full width for sections */
+section {
+  width: 100%;
+}
+
+/* Align navigation and footer to 100% width */
+nav,
+footer {
+  width: 100%;
+}
